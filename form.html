@@ -6,18 +6,55 @@
     <title>form</title>
   </head>
   <body>
-    <form method="get">
-      <label for="name">Nickname:</label>
+    <h1>Tha form</h1>
+    <h2>(this is a public form please dont put any sensitive information)</h2>
+    <form method="get" id="personal-info">
+      <label for="name">Nickname (Required):</label>
       <input
         type="text"
         id="name"
         name="name"
-        placeholder="Put nickname here" /><br />
-      <label for="how do u identify yourself"
-        >how do you identify yourself?</label
-      >
-
-      <input />
+        placeholder="Put nickname here"
+        required /><br /><br />
+      <label for="favorite game">favorite game (Required):</label>
+      <input
+        type="text"
+        id="favorite game"
+        name="favorite game"
+        placeholder="put :> if multiple"
+        required /><br /><br />
+      <fieldset form="personal-info">
+        <legend>What is the best class? (Required)</legend>
+        <input type="radio" id="PE" name="class" value="PE" required />
+        <label for="PE">PE</label>
+        <br />
+        <input type="radio" id="Math" name="class" value="Math" required />
+        <label for="Math">Math</label>
+        <br />
+        <input type="radio" id="ID" name="class" value="ID" required />
+        <label for="ID">ID</label>
+        <br />
+        <input type="radio" id="Band" name="class" value="Band" required />
+        <label for="Band">Band</label>
+      </fieldset>
+      <br />
+      <label for="best number">Best Number (Required):</label>
+      <select name="best number" id="best number">
+        <option value="67">67</option>
+        <option value="69">1</option>
+        <option value="21">21</option>
+        <option value="None im too cool for it">None im too cool for it</option>
+        <option value="i refuse to awnser">i refuse to awnser</option></select
+      ><br /><br />
+      <label for="give me feedback">Give me feedback (Optional)</label>
+      <textarea
+        id="give me feedback"
+        name="give me feedback"
+        rows="4"
+        cols="50">
+      </textarea
+      ><br /><br />
+      <input type="submit" value="Submit tha information" />
     </form>
   </body>
 </html>
